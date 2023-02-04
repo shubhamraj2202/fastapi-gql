@@ -38,11 +38,11 @@ repos:
     hooks:
     -   id: pyupgrade
         args: [--py37-plus, --keep-runtime-typing]
-# Autopep8 automatically formats Python code to conform to the PEP 8 style guide
--   repo: https://github.com/pre-commit/mirrors-autopep8
-    rev: v2.0.0
-    hooks:
-    -   id: autopep8
+# # Autopep8 automatically formats Python code to conform to the PEP 8 style guide
+# -   repo: https://github.com/pre-commit/mirrors-autopep8
+#     rev: v2.0.0
+#     hooks:
+#     -   id: autopep8
 # # rapper around coding style python libs
 # -   repo: https://github.com/PyCQA/flake8
 #     rev: 6.0.0

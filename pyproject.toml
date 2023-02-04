@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "fastapi-gql"
+version = "0.1.0"
+description = "Python project exmaple for using FastAPI/GQL"
+authors = ["Shubham Raj <shubhamraj2202@gmail.com>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [{include = "fastapi_gql"}]
+homepage = "https://github.com/shubhamraj2202/fastapi-gql"
+repository = "https://github.com/shubhamraj2202/fastapi-gql.git"
+keywords = ["fastapi", "gql"]
+
+[tool.poetry.scripts]
+flake8-markdown = 'flake8_markdown:main'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "*"
+strawberry-graphql = "*"
+fastapi = "*"
+pymysql = "*"
+SQLAlchemy = "*"
+uvicorn = "^0.20.0"
+cryptography = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+isort = "*"
+pre-commit = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^6.0.0"
+pytest-cov = "*"
+codecov = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
